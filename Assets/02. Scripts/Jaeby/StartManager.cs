@@ -37,7 +37,6 @@ public class StartManager : MonoBehaviour
     private string firstStartKey = "FirstStart";
     [SerializeField] private Slider volSlider = null;
     [SerializeField] private Text volText = null;
-    private int count = 0;
     
     public void Start()
     {

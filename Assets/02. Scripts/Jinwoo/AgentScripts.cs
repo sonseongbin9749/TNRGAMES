@@ -63,14 +63,12 @@ public class AgentScripts : MonoBehaviour
         //moveSpeed = 0f;
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("meeting");
             if (deadCount == 0)
             {
                 player.FirstDead();
             }
             else
             {
-                Debug.Log("DDDmeeting");
                 player.Dead();
             }
             deadCount++;
@@ -79,7 +77,6 @@ public class AgentScripts : MonoBehaviour
     public void LightItem()
     {
         islightitem = true;
-        Debug.Log("����" + islightitem);
         StartCoroutine(ItemLi(0.7f));
 
     }
@@ -89,7 +86,6 @@ public class AgentScripts : MonoBehaviour
         float timer = 0f;
         while (timer <= _duration)
         {
-            Debug.Log("���� ����");
             timer += 0.2f;
             light2d.pointLightOuterRadius += 2f;
             //float t = Mathf.PingPong(Time.time, 0.1f) / 0.1f;
@@ -127,26 +123,25 @@ public class AgentScripts : MonoBehaviour
         {
             agent.ResetPath();
             enemytime += 0.01f;
-            //Debug.Log("���ʹ� ����");
-            //Debug.Log(enemytime);
             if (enemytime > 5f)
             {
                 enemytime = 0;
-                Debug.Log("��ȯ");
             }
         }
 
         if (Vector2.Distance(enemyTransform.position, target.position) <= 300f && Vector2.Distance(enemyTransform.position, target.position) > 10f)
         {
+            Debug.Log("백그라운드");
             SoundManager.instance.BgSoundPlay();
             agent.speed = 2f;
         }
-        else if (Vector2.Distance(enemyTransform.position, target.position) <= 10f)
+        else if (Vector2.Distance(enemyTransform.position, target.position) <= 100f)
         {
+            Debug.Log("1");
             SoundManager.instance.AIBgSoundPlay();
-            agent.speed = 5f;
+            agent.speed = 4f;
         }
-        else if (Vector2.Distance(enemyTransform.position, target.position) > 10f)
+        else if (Vector2.Distance(enemyTransform.position, target.position) > 100f)
         {
             SoundManager.instance.BgSoundPlay();
             agent.ResetPath();

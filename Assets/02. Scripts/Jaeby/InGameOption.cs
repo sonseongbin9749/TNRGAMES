@@ -23,7 +23,6 @@ public class InGameOption : MonoBehaviour
     private AudioSource c;
 
     
-    [SerializeField] private Sprite[] bgSprite = null;
     [SerializeField] private Sprite[] speakerSprites = null;
     [SerializeField] private Image speakerImage = null;
 

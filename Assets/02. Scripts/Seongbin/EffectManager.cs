@@ -7,25 +7,12 @@ public class EffectManager : MonoBehaviour
     [SerializeField] GameObject click, CloseDoor;
     //[SerializeField] Animator ani;
 
-     bool ispick, isopen, isclick = false;
-
-    private void Start()
-    {
-        //ani = GetComponent<Animator>();
-        
-
-    }
-
-    private void Update()
-    {
-        
-    }
+     bool ispick, isopen,isclick = false;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            Debug.Log("ºÎ‹HÈû");
             isopen = true;
             // ani.Play("Open1");
             click.gameObject.SetActive(true);
@@ -38,7 +25,6 @@ public class EffectManager : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            Debug.Log("ºÎ‹HÈû");
             click.gameObject.SetActive(false);
             isclick = false;
             // ani.Play("Open1");
@@ -57,10 +43,5 @@ public class EffectManager : MonoBehaviour
             CloseDoor.gameObject.SetActive(false);
         }
     }
-
-
-
-
-
 
 }

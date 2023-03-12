@@ -47,7 +47,6 @@ public class SoundManager : MonoBehaviour
     }
     public void Mute()
     {
-        Debug.Log("¹ÂÆ®½ÇÇà");
         aiAudioSource.volume = 0f;
         bgSound.volume = 0f;
         aiAudioSource.mute = true;

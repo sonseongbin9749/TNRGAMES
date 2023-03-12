@@ -24,7 +24,7 @@ public class LayerSetting : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy")|| collision.CompareTag("Col"))
+        if (collision.CompareTag("Enemy")|| coll*sion.CompareTag("Col"))
         {
             tilemap.color = new Color(1, 1, 1, 1f);
         }

@@ -12,10 +12,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private AudioSource c;
     [SerializeField] private Animator ani,ani1,ani2; 
 
-    private bool iskey1click, iskey2click, iskey3click, iscanopen1, iscanopen2, iscanopen3 = false;
-
-    private int a = 0, b = 1;
-    
+    private bool iskey1click, iskey2click, iskey3click, iscanopen1, iscanopen2 = false;
     private void Update()
     {
         if (iskey1click == true)
@@ -67,17 +64,14 @@ public class Inventory : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("체크중");
         if (collision.gameObject.tag.Equals("firstdoor"))
         {
             click1s.gameObject.SetActive(true);
         }
-        Debug.Log("체크중");
         if (collision.gameObject.tag.Equals("seconddoor"))
         {
             click2s.gameObject.SetActive(true);
         }
-        Debug.Log("체크중");
         if (collision.gameObject.tag.Equals("lastdoor"))
         {
             click3s.gameObject.SetActive(true);
@@ -115,20 +109,17 @@ public class Inventory : MonoBehaviour
 
     public void key1click()
     {
-        Debug.Log("a");
         iskey1click = true;
         ani1.Play("doornotopen");
 
     }
     public void key2click()
     {
-        Debug.Log("b");
         iskey2click = true;
         ani1.Play("doornotopen");
     }
     public void key3click()
     {
-        Debug.Log("c");
         iskey3click = true;
         ani1.Play("doornotopen");
     }
@@ -145,7 +136,6 @@ public class Inventory : MonoBehaviour
             }
             else
             {
-                Debug.Log("애니메이션 실행");
                 ani.Play("doornotopen");
             }
         
@@ -162,7 +152,6 @@ public class Inventory : MonoBehaviour
         }
         else
         {
-            Debug.Log("애니메이션 실행");
             ani.Play("doornotopen");
         }
 
@@ -191,7 +180,6 @@ public class Inventory : MonoBehaviour
 
     private void checksetactive1()
     {
-            Debug.Log("checking1");
             click1.gameObject.SetActive(false);
             key1.gameObject.SetActive(false);
             key1s.gameObject.SetActive(true);
@@ -202,7 +190,6 @@ public class Inventory : MonoBehaviour
     }
     private void checksetactive2()
     {
-            Debug.Log("checking2");
             click2.gameObject.SetActive(false);
             key2.gameObject.SetActive(false);
             key2s.gameObject.SetActive(true);
@@ -212,7 +199,6 @@ public class Inventory : MonoBehaviour
     }
     private void checksetactive3()
     {
-            Debug.Log("checking3");
             click3.gameObject.SetActive(false);
             key3.gameObject.SetActive(false);
             key3s.gameObject.SetActive(true);
