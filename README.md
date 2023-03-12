@@ -7,7 +7,7 @@
 ----------
 ### 게임이미지
 
-![이미지](https://cdn.discordapp.com/attachments/1031870281893031999/1084353474977874010/image.png)
+![이미지](https://cdn.discordapp.com/attachments/1031870281893031999/1084388177437012049/image.png)
 
 ![이미지](https://cdn.discordapp.com/attachments/1031870281893031999/1084352749648490506/image.png)
 
