@@ -7,8 +7,16 @@
 ----------
 ### 게임이미지
 
+![이미지](https://cdn.discordapp.com/attachments/1031870281893031999/1084388433197289552/image.png)
+
 ![이미지](https://cdn.discordapp.com/attachments/1031870281893031999/1084388177437012049/image.png)
 
-![이미지](https://cdn.discordapp.com/attachments/1031870281893031999/1084352749648490506/image.png)
+![이미지](https://cdn.discordapp.com/attachments/1031870281893031999/1084388577573601330/image.png)
 
-![이미지](https://cdn.discordapp.com/attachments/1031870281893031999/1084352835518484552/image.png)
+![이미지](https://cdn.discordapp.com/attachments/1031870281893031999/1084389065471840307/image.png)
+
+----------
+### 홍보 포스터
+
+![이미지](https://cdn.discordapp.com/attachments/826295379234390052/1084384285424885862/Team_-JJB-.png)
+
